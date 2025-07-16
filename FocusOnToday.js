@@ -1,3 +1,4 @@
+// Selecting Html Elements
 const addGoalBtn = document.getElementById("addGoalBtn");
 const newGoalInput = document.getElementById("newGoalInput");
 const goalsList = document.getElementById("goalsList");
