@@ -1,26 +1,12 @@
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-body {
-    background-color: rgba(72, 163, 0, 0.07);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
-}
+body { background-color: rgba(72, 163, 0, 0.07); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin: 0; }
 
-main {
-    padding: 0 12px 48px;
-}
+main { padding: 0 12px 48px; }
 
-.heading {
-    font-size: 64px;
-    color: #61481C;
-    text-align: center;
-}
+.heading { font-size: 64px; color: #61481C; text-align: center; }
 
-.heading span {
-    color: #61481C;
-}
+.heading span { color: #61481C; }
 
 .container {
     background: #FBFBFB;
@@ -32,33 +18,13 @@ main {
     box-shadow: 0 0 25px #75897b;
 }
 
-.sub-heading {
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    color: #48A300;
-    margin-top: 8px;
-}
+.sub-heading { text-align: center; font-size: 32px; font-weight: 700; color: #48A300; margin-top: 8px; }
 
-.image {
-    height: 32px;
-    vertical-align: middle;
-    margin-left: 8px;
-}
+.image { height: 32px; vertical-align: middle; margin-left: 8px; }
 
-.Progress-label {
-    font-size: 16px;
-    color: rgb(7, 68, 167);
-    margin-bottom: 20px;
-}
+.Progress-label { font-size: 16px; color: rgb(7, 68, 167); margin-bottom: 20px; }
 
-.progress-bar {
-    background-color: #48A3001A;
-    height: 20px;
-    border-radius: 15px;
-    margin-bottom: 8px;
-    position: relative;
-}
+.progress-bar { background-color: #48A3001A; height: 20px; border-radius: 15px; margin-bottom: 8px; position: relative; }
 
 .progress-status {
     background-color: #48A300;
@@ -72,22 +38,11 @@ main {
     transition: width 0.50s ease-in-out;
 }
 
-.progress-status span {
-    padding-left: 16px;
-    min-width: max-content;
-}
+.progress-status span { padding-left: 16px; min-width: max-content; }
 
-.error {
-    color: #FF5151;
-    font-size: 12px;
-    margin-top: 6px;
-    position: absolute;
-    display: none;
-}
+.error { color: #FF5151; font-size: 12px; margin-top: 6px; position: absolute; display: none; }
 
-.show-error .error {
-    display: block;
-}
+.show-error .error { display: block; }
 
 .add-goal-bar {
     display: flex;
@@ -108,11 +63,7 @@ main {
     transition: border 0.3s;
 }
 
-#newGoalInput:focus {
-    border-color: #48A300;
-    box-shadow: 0 0 5px #0c8d66;
-}
-
+#newGoalInput:focus { border-color: #48A300; box-shadow: 0 0 5px #0c8d66; }
 
 #addGoalBtn {
     background-color: #fff;
@@ -129,23 +80,11 @@ main {
     gap: 5px;
 }
 
-#addGoalBtn i {
-    font-size: 16px;
-    color: #3a8500;
-}
+#addGoalBtn i { font-size: 16px; color: #3a8500; }
 
-#addGoalBtn:hover {
-    transform: translateY(-0.5px);
-    box-shadow: 0 0 5px #0c8d66;
-}
+#addGoalBtn:hover { transform: translateY(-0.5px); box-shadow: 0 0 5px #0c8d66; }
 
-
-.goals-list {
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+.goals-list { margin-top: 24px; display: flex; flex-direction: column; gap: 20px; }
 
 .goal-container {
     border-radius: 17px;
@@ -170,10 +109,7 @@ main {
     margin-right: 16px;
 }
 
-.check-Icon {
-    width: 16px;
-    display: none;
-}
+.check-Icon { width: 16px; display: none; }
 
 .goal-input {
     border: none;
@@ -185,23 +121,13 @@ main {
     background: transparent;
 }
 
-.goal-input::placeholder {
-    color: #D9D9D9;
-}
+.goal-input::placeholder { color: #D9D9D9; }
 
-.completed .custom-cb {
-    background-color: rgba(72, 163, 0, 1);
-    border-color: rgba(72, 163, 0, 1);
-}
+.completed .custom-cb { background-color: rgba(72, 163, 0, 1); border-color: rgba(72, 163, 0, 1); }
 
-.completed .check-Icon {
-    display: block;
-}
+.completed .check-Icon { display: block; }
 
-.completed .goal-input {
-    color: #48A300;
-    text-decoration-line: line-through;
-}
+.completed .goal-input { color: #48A300; text-decoration-line: line-through; }
 
 .delete-btn {
     background: none;
@@ -213,9 +139,7 @@ main {
     transition: transform 0.2s ease;
 }
 
-.delete-btn:hover {
-    transform: scale(1.2);
-}
+.delete-btn:hover { transform: scale(1.2); }
 
 .Move-ahead {
     font-size: 16px;
@@ -225,15 +149,7 @@ main {
     margin-block: 20px;
 }
 
-.Info {
-    padding-top: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    color: rgb(9, 49, 134);
-}
-
-
+.Info { padding-top: 8px; font-size: 16px; font-weight: 500; text-align: center; color: rgb(9, 49, 134); }
 
 .celebration {
     position: fixed;
@@ -285,23 +201,15 @@ main {
     }
 }
 
-
-
 @media (max-width: 768px) {
-    .heading {
+    .heading 
+    { 
         font-size: 36px;
     }
 
-    .container {
-        padding: 16px 24px;
-    }
+    .container { padding: 16px 24px; }
 
-    .add-goal-bar {
-        flex-direction: column;
-        align-items: stretch;
-    }
+    .add-goal-bar { flex-direction: column;  align-items: stretch; }
 
-    #addGoalBtn {
-        width: 100%;
-    }
+    #addGoalBtn { width: 100%; }
 }
