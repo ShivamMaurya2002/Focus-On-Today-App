@@ -1,11 +1,18 @@
 // Selecting Html Elements
 const addGoalBtn = document.getElementById("addGoalBtn");
+
 const newGoalInput = document.getElementById("newGoalInput");
+
 const goalsList = document.getElementById("goalsList");
+
 const progressLabel = document.querySelector(".Progress-label");
+
 const progressStatus = document.querySelector(".progress-status");
+
 const progressBar = document.querySelector(".progress-bar");
+
 const errorLabel = document.querySelector(".error");
+
 const celebrationContainer = document.getElementById("celebrationContainer");
 
 const motivationalQuotes = [
@@ -26,12 +33,14 @@ addGoalBtn.addEventListener("click", addNewGoal);
 
 // Handle Enter key in input field
 newGoalInput.addEventListener("keypress", function (e) {
-    if (e.key === "Enter") {
+    if (e.key === "Enter") 
+    {
         addNewGoal();
     }
 });
 
-function addNewGoal() {
+function addNewGoal() 
+{
     const goalText = newGoalInput.value.trim();
     if (goalText === "") return;
 
@@ -47,7 +56,8 @@ function addNewGoal() {
     renderGoals();
 }
 
-function renderGoals() {
+function renderGoals() 
+{
     goalsList.innerHTML = "";
 
     allGoals.forEach(goal => {
@@ -70,7 +80,8 @@ function renderGoals() {
     updateProgress();
 }
 
-function attachListeners() {
+function attachListeners() 
+{
     const checkIcons = document.querySelectorAll(".custom-cb");
     const deleteBtns = document.querySelectorAll(".delete-btn");
 
@@ -79,7 +90,8 @@ function attachListeners() {
             const id = Number(icon.dataset.id);
             const goal = allGoals.find(g => g.id === id);
 
-            if (!goal.text.trim()) {
+            if (!goal.text.trim()) 
+            {
                 progressBar.classList.add("show-error");
                 return;
             }
@@ -100,7 +112,8 @@ function attachListeners() {
     });
 }
 
-function updateProgress() {
+function updateProgress() 
+{
     const total = allGoals.length;
     const completed = allGoals.filter(g => g.completed).length;
 
@@ -109,10 +122,13 @@ function updateProgress() {
     progressStatus.firstElementChild.innerText = `${completed}/${total} completed`;
 
     // Choose motivational quote
-    if (completed === total && total !== 0) {
+    if (completed === total && total !== 0) 
+    {
         progressLabel.innerText = motivationalQuotes[5];
         triggerCelebration();
-    } else {
+    } 
+    else 
+    {
         const index = Math.min(completed, motivationalQuotes.length - 2);
         progressLabel.innerText = motivationalQuotes[index];
     }
@@ -123,12 +139,14 @@ function updateProgress() {
 
 
 // Trigger animation when all goals complete
-function triggerCelebration() {
+function triggerCelebration() 
+{
     if (!celebrationContainer) return;
     celebrationContainer.innerHTML = "";
 
     // Confetti burst
-    for (let i = 0; i < 400; i++) {
+    for (let i = 0; i < 400; i++) 
+    {
         const confetti = document.createElement("div");
         confetti.classList.add("confetti");
         confetti.style.left = Math.random() * 100 + "vw";
@@ -138,7 +156,8 @@ function triggerCelebration() {
     }
 
     // Petal fall
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 100; i++) 
+    {
         const petal = document.createElement("div");
         petal.classList.add("petal");
         petal.style.left = Math.random() * 200 + "vw";
@@ -154,7 +173,8 @@ function triggerCelebration() {
 }
 
 // Random Confetti Colors
-function getRandomColor() {
+function getRandomColor() 
+{
     const colors = ["#FF5733", "#FFD700", "#00FF7F", "#FF69B4", "#00BFFF", "#FF4500"];
     return colors[Math.floor(Math.random() * colors.length)];
 }
